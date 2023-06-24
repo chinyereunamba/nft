@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.card p{
+    color: hsl(215, 51%, 70%);
+    line-height: 1.3rem;
+}
+
+.container .card {
+    position: relative;
+    background: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    padding: 1.1rem;
+    max-width: 325px;
+}
+
+.container .card::after{
+    position: absolute;
+    content: "";
+    width: 360px;
+    height: 550px;
+    background: hsla(213, 43%, 9%, 0.467);
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    z-index: -3;
+}
+
+.container .card .card-img {
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-img img {
+    width: 100%;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.card .card-info {
+    margin: 1rem auto 0 auto;
+    padding: 0.5rem 0;
+}
+.card-title {
+    margin-bottom: 0.6rem;
+}
+.card-title h2 {
+    line-height: 1.5rem;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.card-info .card-des {
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.card-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0;
+    margin: .6rem 0;
+}
+
+.card-detail span {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: 14px;
+}
+
+.card-detail .eth p{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+hr{
+    margin: .7rem 0;
+    background: hsl(215, 32%, 27%);
+    border: 0.5px solid hsl(215, 32%, 27%);
+}
+
+.card .profile{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    gap: 0.6rem;
+}
+
+.profile .avatar{
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.profile .avatar img{
+    width: 100%;
+}
+
+.profile p{
+    font-size: 14px;
+}
+
+.profile b{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+.attribution {
+    /* margin: 5rem auto; */
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
