@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/chinyereunamba/nft)
-- Live Site URL: [View site](https://your-live-site-url.com)
+- Live Site URL: [View site](https://incandescent-paletas-4c2fe5.netlify.app/)
 
 ## My process
 
