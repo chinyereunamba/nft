@@ -25,13 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot](./Screenshot.jpg)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/chinyereunamba/nft)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/chinyereunamba/nft)
+- Live Site URL: [View site](https://your-live-site-url.com)
 
 ## My process
 

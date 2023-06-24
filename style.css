@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
 * {
     margin: 0;
@@ -16,13 +16,13 @@ body {
     flex-direction: column;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     gap: 5rem;
 }
 
-.card p{
+.card p {
     color: hsl(215, 51%, 70%);
     line-height: 1.3rem;
 }
@@ -35,7 +35,7 @@ main{
     max-width: 325px;
 }
 
-.container .card::after{
+.container .card::after {
     position: absolute;
     content: "";
     width: 360px;
@@ -49,10 +49,40 @@ main{
 }
 
 .container .card .card-img {
+    position: relative;
     width: 290px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+.view {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 290px;
+    transform: translate(-50%, -50%);
+    width: 290px;
+    background-color: hsla(178, 100%, 50%, 0.562);
+    border-radius: 10px;
+}
+
+.eye{
+    position: relative;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.eye img{
+    width: 100%;
+}
+
+.container .card .card-img:hover .view{
+    display: block;
+    transition: 0.8s ease-out;
 }
 
 .card .card-img img {
@@ -73,6 +103,11 @@ main{
     font-size: 18px;
     color: hsl(0, 0%, 100%);
     font-weight: 600;
+    cursor: pointer;
+}
+
+.card-title h2:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 .card-info .card-des {
@@ -84,53 +119,59 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 0;
-    margin: .6rem 0;
+    padding: 0.5rem 0;
+    margin: 0.6rem 0;
 }
 
 .card-detail span {
     display: flex;
     align-items: center;
-    gap: .4rem;
+    gap: 0.4rem;
     font-size: 14px;
 }
 
-.card-detail .eth p{
+.card-detail .eth p {
     color: hsl(178, 100%, 50%);
     font-weight: 600;
 }
-hr{
-    margin: .7rem 0;
+hr {
+    margin: 0.7rem 0;
     background: hsl(215, 32%, 27%);
     border: 0.5px solid hsl(215, 32%, 27%);
 }
 
-.card .profile{
+.card .profile {
     display: flex;
     align-items: center;
     padding: 0.5rem 0;
     gap: 0.6rem;
 }
 
-.profile .avatar{
+.profile .avatar {
     width: 40px;
     height: 40px;
     border: 2px solid hsl(0, 0%, 100%);
     border-radius: 20px;
 }
 
-.profile .avatar img{
+.profile .avatar img {
     width: 100%;
 }
 
-.profile p{
+.profile p {
     font-size: 14px;
 }
 
-.profile b{
+.profile b {
     color: hsl(0, 0%, 100%);
     font-weight: 300;
+    cursor: pointer;
 }
+
+.profile b:hover {
+    color: hsl(178, 100%, 50%);
+}
+
 .attribution {
     /* margin: 5rem auto; */
     font-size: 11px;
